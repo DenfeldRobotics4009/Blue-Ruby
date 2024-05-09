@@ -40,7 +40,7 @@ public class App {
 
                             new Question(
                                 "You choose right path and run into a purpul grasshopper and he is uneque and enchanted grasshoper he gives you a stick with sharp edge and he shows you a secrect tunnle go in or no",
-                                new String[]{"no tunnle" or "yes tunnle"},
+                                new String[]{"no tunnle" , "yes tunnle"},
                                 new Question[]{}
                             )   
 
