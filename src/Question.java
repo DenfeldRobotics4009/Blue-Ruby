@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-
 public class Question {
     boolean gameOver;
     String prompt;
@@ -24,13 +23,14 @@ public class Question {
     }
 
     public void answer(String input){
-
-        double deathChance = Math.random();
+        // this is stupid
+        double deathChance = Math.round(Math.max(0, Math.min(Math.random()*100, 100)));
         System.out.println(deathChance);
-        
-        if(gameOver = true) {
+
+        if(deathChance == 1.0 || gameOver == true) {
             
         }
+
         input = input.toLowerCase();
         for(int i = 0; i < options.length; i++){
             if(input.equals(options[i])){
@@ -41,4 +41,5 @@ public class Question {
 
         answer(input());
     }
+
 }
