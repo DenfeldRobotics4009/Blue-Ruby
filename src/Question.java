@@ -24,15 +24,17 @@ public class Question {
 
     public void answer(String input){
         // this is stupid
-        double deathChance = Math.round(Math.max(0, Math.min(Math.random()*100, 100)));
+        double deathChance = Math.random()*100;
         System.out.println(deathChance);
 
-        if(deathChance == 1.0 || gameOver == true) {
-            
+        if(deathChance < 1.0 || gameOver == true) {
+            Constants.question.answer(Constants.question.input());
+            return;
         }
 
         input = input.toLowerCase();
         for(int i = 0; i < options.length; i++){
+            //if the answer is right
             if(input.equals(options[i])){
                 questions[i].answer(questions[i].input());
                 return;
