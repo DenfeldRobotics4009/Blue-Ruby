@@ -1,5 +1,5 @@
 public class Constants {
-    
+
     public static Question question = new Question(
         false,
         "\nYou are a lone sailer on boat wanting to make money, and you heard that there are gems hidden somewhere in this vast ocean.\nYou are sailing and you see and a man sitting on a rock. You also see a town approacing on the horizon.\nDo you want to talk to the man or do you want to go to the town?\n(\"talk to man\" or \"town\")", 
@@ -27,7 +27,7 @@ public class Constants {
 
                     new Question(
                         true,
-                        "\nYou go to talk to the animals. They try to attack you, but you trip on a stone and die before they get the chance. Man, you suck at walking.\nGAME OVER",
+                        "\nYou go to talk to the animals. They try to attack you, but you trip on a stone and die before they get the chance. Man, you suck at walking.\nGAME OVER\n(press enter to retry)",
                         new String[]{},
                         new Question[]{}
                     ),
@@ -40,7 +40,7 @@ public class Constants {
 
                         new Question(
                             true,
-                            "\nYou decide to take the left path. You get shot by a skeleton and lose all your items. You wake up in your house.\nGAME OVER",
+                            "\nYou decide to take the left path. You get shot by a skeleton and lose all your items. You wake up in your house.\nGAME OVER\n(press enter to retry)",
                             new String[]{},
                             new Question[]{}
                         ),

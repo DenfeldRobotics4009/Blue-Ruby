@@ -23,11 +23,18 @@ public class Question {
     }
 
     public void answer(String input){
-        // this is stupid
+        // this is no longer stupid
         double deathChance = Math.random()*100;
         System.out.println(deathChance);
 
-        if(deathChance < 1.0 || gameOver == true) {
+        if(deathChance < 1) {
+            System.out.println("\nOops, you got struck by lightning. How unfortunate!\nGAME OVER\n(press enter to retry)");
+            reader.nextLine();
+            Constants.question.answer(Constants.question.input());
+            return;
+        }
+
+        if(gameOver == true) {
             Constants.question.answer(Constants.question.input());
             return;
         }
