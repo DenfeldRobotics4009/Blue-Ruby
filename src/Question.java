@@ -23,9 +23,8 @@ public class Question {
     }
 
     public void answer(String input){
-        // this is no longer stupid
+
         double deathChance = Math.random()*100;
-        System.out.println(deathChance);
 
         if(deathChance < 1) {
             System.out.println("\nOops, you got struck by lightning. How unfortunate!\nGAME OVER\n(press enter to retry)");

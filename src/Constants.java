@@ -47,44 +47,91 @@ public class Constants {
 
                         new Question(
                             false,
-                            "\nYou choose right path and run into a purpul grasshopper and he is uneque and enchanted grasshoper he gives you a stick with sharp edge and he shows you a secrect tunnle go in or no",
-                            new String[]{"no tunnle", "yes tunnle"},
+                            "\nYou choose right path and run into a purpul grasshopper and he is uneque and enchanted grasshoper he gives you a stick with sharp edge and he shows you a secrect tunnle go in or no\n(\"go in\" or \"ignore\")",
+                            new String[]{"go in", "ignore"},
                             new Question[]{
 
                             new Question(
                                 false,
-                                "\nYou say yes purple grasshopper and he opens a tunnel and give a skate board and you hop on and zoom away and you see the end you arive at the gem what do you do take gem or leave it.",
-                                new String[]{"no gem", "yes gem"},
-                                new Question[]{}
-                            ),
+                                "\nYou say yes purple grasshopper and he opens a tunnel and give a AK47 and you zoom away and you see the end you arive at the gem what do you do take gem or leave it.\n(\"leave gem\" or \"take gem\")",
+                                new String[]{"leave gem", "take gem"},
+                                new Question[]{
+
+                                new Question(
+                                    false,
+                                    "leave gem",
+                                    new String[]{},
+                                    new Question[]{}
+                                ),
+
+                                new Question(
+                                    false,
+                                    "\nAs you take the gem, a group of flying lemurs flies towards you menacingly. What do you do?\n(\"throw gem\", \"shoot\", or \"run\")",
+                                    new String[]{"throw gem", "shoot", "run"},
+                                    new Question[]{
+
+                                    new Question(
+                                        true,
+                                        "\nYou throw the gem. The lemurs catch the gem and throw it at your head, shattering your skull.\nGAME OVER\n(press enter to retry)",
+                                        new String[]{},
+                                        new Question[]{}
+                                    ),
+
+                                    new Question(
+                                        true,
+                                        "\nYou grab your AK47. But you don't have any ammo. The monkeys attack you.\nGAME OVER\n(press enter to retry)",
+                                        new String[]{},
+                                        new Question[]{}
+                                    ),
+
+                                    new Question(
+                                        false,
+                                        "\nYou try to run away, but the lemurs corner you. You spot a hole in the wall. Do you beg the lemurs for mercy, or do you attempt a daring escape?\n(\"beg\" or \"escape\")",
+                                        new String[]{"beg", "escape"},
+                                        new Question[]{
+
+                                        new Question(
+                                            true,
+                                            "\nYou beg the lemurs to let you go. They make an offer with you. They'll let you go if you share your wealth with them. You accept the offer and fly out of the temple with your new friends.\nYOU WIN!!!\n(press enter to restart)",
+                                            new String[]{},
+                                            new Question[]{}
+                                        ),
+
+                                        new Question(
+                                            true,
+                                            "\nYou try to crawl through the hole, but you don't fit. The lemurs attack you. Try eating fewer donuts next time.\nGAME OVER\n(press enter to retry)",
+                                            new String[]{},
+                                            new Question[]{}
+                                        ),
+
+                                    }
+
+                                    ),
 
                             new Question(
-                                false,
-                                "",
+                                true,
+                                "The grasshopper shoots you in the face with an RPG. You should've talked with him you idiot!!!\nGAME OVER\n(press enter to retry)",
                                 new String[]{},
                                 new Question[]{}
                             )
-
                             }
-                        )   
-
+                        )
                         }
                     )
-
                     }
-
-                )
-
+                )   
                 }
-            ),
-
+            )
+            }
+        )
+        }               
+    ),
             new Question(
                 false,
                 "test prompt 2", 
                 new String[]{},
                 new Question[]{}
             )
-        }
+        }   
     );
-
 }
