@@ -128,8 +128,8 @@ public class Constants {
     ),
             new Question(
                 false,
-                "test prompt 2", 
-                new String[]{},
+                "You decide to sail to the town far in the distance. After you dock, you walk ashore and onto a dock and see a man and a tavern. Do you want to talk to the man, or go to the tavern?\n(\"Talk to man\" or \"Go to tavern\")", 
+                new String[]{"talk to man", "go to tavern"},
                 new Question[]{}
             )
         }   
